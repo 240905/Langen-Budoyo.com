@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanggar Seni Kuda Lumping Langen Budoyo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Tambahkan CSS untuk efek tulisan berjalan */
+        .marquee {
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+            position: relative;
+            background-color: rgba(178, 34, 34, 0.8); /* Warna latar belakang merah transparan */
+            color: #fff; /* Teks putih */
+            padding: 10px 0;
+            font-family: 'Cinzel', serif; /* Menggunakan font Cinzel untuk marquee */
+        }
+
+        .marquee span {
+            display: inline-block;
+            padding-left: 100%; /* Memberikan jarak awal */
+            animation: marquee 15s linear infinite; /* Durasi dan jenis animasi */
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(-100%, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo Langen Budoyo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.php">Beranda</a></li>
+                <li><a href="galeri.php">Galeri</a></li>
+                <li><a href="sejarah.php">Sejarah</a></li>
+                <li><a href="struktur.php">Struktur Kepengurusan</a></li>
+                <li><a href="kontak.php">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="beranda">
+        <div class="marquee">
+            <span>Selamat Datang di Sanggar Seni Kuda Lumping Langen Budoyo yang beralamat di jalan Mualim Desa Air Merbau Kabupaten Belitung </span>
+        </div>
+        
+        <h2>Lokasi</h2>
+        <p>Alamat: Jl. Mualim</p>
+        <p><a href="https://www.google.com/maps/place/Kuda+Lumping+Langen+Budoyo/@-2.728274,107.6116683,13z/data=!4m6!3m5!1s0x2e1715006030e287:0x71481aba93d16a4!8m2!3d-2.712371!4d107.6673219!16s%2Fg%2F11ybnm5432?entry=ttu&g_ep=EgoyMDI1MDExNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Lihat di Google Maps</a></p>
+        
+        <h2>Kontak</h2>
+        <p>Email: info@langenbudoyo.com</p>
+        <p>Telepon: (021) 12345678</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Sanggar Seni Kuda Lumping Langen Budoyo</p>
+    </footer>
+</body>
+</html>
